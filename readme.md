@@ -5,8 +5,7 @@
 > <br>
 >  **Status:** 🚧 Under Construction / Em desenvolvimento
 > 
-> <a style="text-decoration: none;">Read in English</a>| [Leia em Português](../VIO/readme-pt-br.md)
-
+> [Read in English](readme.md) | [Leia em Português](readme-pt-br.md)
 
 ## 🎵 VIO - Full Stack Music Experience
 This is a project for a modern music player, developed to offer a seamless and visually appealing user experience. The project arose from the need to apply advanced front-end concepts and integrate them into a robust back-end infrastructure.
