@@ -1,8 +1,8 @@
 # 🎵 VIO - Full Stack Music Experience
 
-> [!IMPORTANT] 
+> [!IMPORTANTE] 
 > <br>
->  **Status:** 🚧 Under Construction / Em desenvolvimento
+>  **Status:** 🚧  Em desenvolvimento
 > 
 >[Read in English](readme.md) | [Leia em Português](readme-pt-br.md)
 

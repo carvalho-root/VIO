@@ -3,7 +3,7 @@
 
 > [!IMPORTANT] 
 > <br>
->  **Status:** 🚧 Under Construction / Em desenvolvimento
+>  **Status:** 🚧 Under Construction 
 > 
 > [Read in English](readme.md) | [Leia em Português](readme-pt-br.md)
 
