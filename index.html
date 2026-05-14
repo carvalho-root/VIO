@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="client/css/global.css">
+    <link rel="stylesheet" href="client/css/layout.css">
+    <link rel="stylesheet" href="client/css/sidebar.css">
+    <link rel="stylesheet" href="client/css/cards.css">
    <link
       rel="stylesheet"
       type="text/css"
@@ -17,79 +20,108 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="mobile-card">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="mobile-card">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </div>
+            <div class="side-card">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#HOME"><i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>Home</a></li>
+                        <li><a href="#EXPLORE"><i class="fa-regular fa-compass" style="color: rgb(255, 255, 255);"></i>Explore</a></li>
+                        <li><a href="#ALBUMS"><i class="fa-solid fa-compact-disc" style="color: rgb(255, 255, 255);"></i>Albums</a></li>
+                        <li><a href="#ARTISTS"><i class="fa-regular fa-user" style="color: rgb(255, 255, 255);"></i>Artists</a></li>
+                        <li><a href="#PLAYLIST"><i class="fa-solid fa-list" style="color: rgb(255, 255, 255);"></i>Playlist</a></li>
+                        <li><a href="#LIKED-SONGS"><i class="fa-regular fa-heart" style="color: rgb(255, 255, 255);"></i>Liked Songs</a></li>
+                        <li><a href="#RECENTS"><i class="fa-solid fa-clock-rotate-left" style="color: rgb(255, 255, 255);"></i>Recents</a></li>
+                        <li><a href="#SAVED"><i class="fa-solid fa-bookmark" style="color: rgb(255, 255, 255);"></i>Saved</a></li>
+                        <li><a href="#SETTINGS"><i class="fa-solid fa-gear" style="color: rgb(255, 255, 255);"></i>Settings</a></li>     
+                    </ul>        
+                </nav>
+            </div>    
         </div>
-        <div class="side-card">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#HOME"><i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>Home</a></li>
-                    <li><a href="#EXPLORAR"><i class="fa-regular fa-compass" style="color: rgb(255, 255, 255);"></i>Explorar</a></li>
-                    <li><a href="#ALBUNS"><i class="fa-solid fa-compact-disc" style="color: rgb(255, 255, 255);"></i>Albuns</a></li>
-                    <li><a href="#ARTISTAS"><i class="fa-regular fa-user" style="color: rgb(255, 255, 255);"></i>Artistas</a></li>
-                    <li><a href="#PLAYLIST"><i class="fa-solid fa-list" style="color: rgb(255, 255, 255);"></i>Playlist</a></li>
-                    <li><a href="#MUSICAS"><i class="fa-regular fa-heart" style="color: rgb(255, 255, 255);"></i>Musicas Curtidas</a></li>
-                    <li><a href="#RECENTES"><i class="fa-solid fa-clock-rotate-left" style="color: rgb(255, 255, 255);"></i>Recentes</a></li>
-                    <li><a href="#SALVOS"><i class="fa-solid fa-bookmark" style="color: rgb(255, 255, 255);"></i>Salvos</a></li>
-                    <li><a href="#CONFIGURACOES"><i class="fa-solid fa-gear" style="color: rgb(255, 255, 255);"></i>Configurações</a></li>     
-                </ul>        
-            </nav>
-        </div>    
-    </div>
-    <main>
-        <section class="barra-pesquisa">
-            <div class="pesquisa">
-
-                <form action="/buscar" method="get" class="form-pesquisa">
-                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
-                    <input class="input" type="search" name="q" placeholder="Digite a faixa que desejar" autocomplete="off">
-                    <i class="fa-solid fa-sliders" style="color: rgb(255, 255, 255);"></i>
-                </form>
-                
-            </div>
-        </section>
-
-        <div class="main-cards">
-            <section class="card">
-                <div class="card-song">
-                    <img src="/static/assets/hip-hop.jpg">
-                    <div class="descricao">
-                        <h2>Legend</h2>
-                        <i>Anno Domini Beats</i>
-                    </div>
+        <main class="main-card">
+            <section class="top-card"> 
+                <div class="left-col">
+                    <section class="barra-pesquisa">
+                        <div class="pesquisa">
+                            <form action="/buscar" method="get" class="form-pesquisa">
+                                <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255);"></i>
+                                <input class="input" type="search" name="q" placeholder="Digite a faixa que desejar" autocomplete="off">
+                                <i class="fa-solid fa-sliders" style="color: rgb(255, 255, 255);"></i>
+                            </form>
+                        </div>
+                    </section>
                 </div>
-
-                <div class="duracao">
-                    <div class="barra"></div>
-                    <div class="tempo">
-                        <p class="inicio"><b>00:00</b></p> 
-                        <progress value="" max="1"></progress>
-                        <p class="fim"><b>3:12</b></p>
-                    </div>
-                </div>
-
-                <div class="ponto"></div>
-                    <div class="player">
-                        <i class="ph-fill ph-skip-back"></i>
-                        <i class="ph-fill ph-play"></i>
-                        <i class="ph-fill ph-pause"></i>
-                        <i class="ph-fill ph-skip-forward"></i>
-                    </div>
+                <div class="right-col">
+                    <section class="perfil">
+                        <i class="fa-regular fa-bell"style="color: rgb(255, 255, 255);"></i>
+                        <img src="client/assets/profile.png" alt="Profile">
+                        <hgroup>
+                            <h4>Guest</h4>
+                            <h5>Enjoy music</h5>
+                        </hgroup>
+                        <i class="fa-solid fa-angle-down" style="color: rgb(255, 255, 255);"></i>
+                    </section>
                 </div>
             </section>
-        </div>
+            <div class="main-cards">
+                <section class="card">
+                    <div class="card-song">
+                        <img src="client/assets/hip-hop.jpg">
+                        <div class="descricao">
+                            <h2>Legend</h2>
+                            <i>Anno Domini Beats</i>
+                        </div>
+                    </div>
 
-        <audio src="/musicas/Legend - Anno Domini Beats.mp3"></audio>
-    </main>
+                    <div class="duracao">
+                        <div class="barra"></div>
+                        <div class="tempo">
+                            <p class="inicio"><b>00:00</b></p> 
+                            <progress value="" max="1"></progress>
+                            <p class="fim"><b>3:12</b></p>
+                        </div>
+                    </div>
+
+                    <div class="ponto"></div>
+                        <div class="player">
+                            <i class="ph-fill ph-skip-back"></i>
+                            <i class="ph-fill ph-play"></i>
+                            <i class="ph-fill ph-pause"></i>
+                            <i class="ph-fill ph-skip-forward"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="multiple-music">
+                    <p></p>
+                    <p></p>
+                </section>
+            </div>
+            <audio src="/musicas/Legend - Anno Domini Beats.mp3"></audio>
+        </main>
+    </div>
     <footer class="footer-card">
-
+        <div class="icons-footer">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-pause"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-repeat"></i>
+            <i class="fa-solid fa-volume"></i>
+        </div>
     </footer>
-    <script src="static/js/script.js"></script>
+    <script src="client/js/player-logic.js"></script>
+    <script src="client/js/ui-effects.js"></script>
+    <script src="client/js/navigation.js"></script>
 </body>
 </html>
 

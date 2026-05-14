@@ -1,0 +1,59 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+html { box-sizing: border-box; } 
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Paleta de Cores */
+:root {
+    /* Tons de Fundo (Backgrounds) */
+    --bg-dark: #080111;         /* O preto quase roxo do fundo principal */
+    --bg-sidebar: rgba(20, 10, 30, 0.6); /* Fundo da sidebar com transparência */
+    --bg-card: rgba(255, 255, 255, 0.05); /* Fundo dos cards (Glassmorphism) */
+
+    /* Tons de Roxo (Primários e Neons) */
+    --purple-main: #8a2be2;      /* Roxo base dos ícones e botões */
+    --purple-neon: rgba(188, 19, 254, .1);     /* O roxo brilhante para estados de hover */
+    --purple-glow: rgba(188, 19, 254, 0.5); /* Sombra suave para o efeito de brilho */
+
+    /* Cards */
+
+    --bg-card-main: rgba(30, 30, 40, 0.4);  /* Um cinza-azulado bem escuro e transparente */
+    --card-shadow: rgba(0, 0, 0, 0.5);  /* Sombra para destacar o card do fundo */
+
+    /* Input de Pesquisa */
+    --bg-input: rgba(255, 255, 255, 0.08);    /* Um pouco mais visível que o fundo */
+    --input-border: rgba(138, 43, 226, 0.3);  /* Borda roxa bem sutil */
+    --input-focus: #bc13fe;                   /* Roxo neon quando clicar para digitar */
+
+    /* Gradientes */
+    --gradient-purple: linear-gradient(135deg, #8a2be2, #4b0082);
+
+    /* Cores de Texto */
+    --text-main: #ffffff;       /* Branco puro para títulos */
+    --text-secondary: #b3b3b3;  /* Cinza claro para descrições e rodapés */
+    --text-muted: #6e6e6e;      /* Para textos menos importantes ou desativados */
+
+    /* Hover e Seleção */
+    --bg-item-hover: rgba(138, 43, 226, 0.15); /* Fundo sutil ao passar o mouse em itens da lista */
+
+    /* Extras */
+    --border-glass: rgba(255, 255, 255, 0.1); /* Borda fina para dar efeito de vidro */
+}
+
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family:'Inter', sans-serif;
+    grid-template-rows: 100vh;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { 
+    background: var(--purple-main); 
+    border-radius: 10px;
+}

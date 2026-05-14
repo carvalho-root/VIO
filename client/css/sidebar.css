@@ -1,0 +1,78 @@
+.sidebar{
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border: 1px solid var( --border-glass);
+    width: 250px;
+    height: calc(100vh - 200px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 25px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+} 
+
+.mobile-card{
+    background-color: var(--bg-input);
+    border-radius: 10px;
+    margin: 15px;
+    
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 10px;
+}
+
+.mobile-menu div:focus{
+    outline: none;
+    border-color: var(--purple-neon);
+}
+
+
+.side-card{
+    background-color: var(--bg-input);
+    border-radius: 10px;
+    margin: 0 10px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+
+.menu li {
+    
+    text-align: start;
+    list-style: none;
+    margin-bottom: 10px;
+    height: 60px;
+    color:#FFF;
+    margin: 15px;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    text-decoration: none;
+    transition: .5s;
+    
+}
+
+.menu li:hover{
+    background-color: var(--purple-neon);
+    border-radius: 10px;
+   
+}
+
+.menu li a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 15px;
+    border-radius: 12px;
+}

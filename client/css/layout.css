@@ -1,0 +1,51 @@
+
+/* Serch bar */
+.barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.form-pesquisa{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-pesquisa i{
+    position: absolute;
+    color: var(--text-secondary);
+}
+
+
+.fa-magnifying-glass {
+    left: 20px;
+}
+
+
+.fa-sliders {
+    right: 20px;
+}
+.input{
+
+    width: 500px;
+    height: 70px;
+
+    font-size: 1rem;
+    padding: 0 55px;
+    
+    border-radius: 5em;
+    margin-top: .6em;
+
+    color: var(--text-main);
+    background-color: var(--bg-input);
+    border: 1px solid var(--input-border);
+    transition: .4s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--purple-neon);
+    box-shadow: 0 0px 15px var(--purple-glow);
+
+}
