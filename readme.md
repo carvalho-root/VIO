@@ -147,7 +147,7 @@ The project was born from the need to apply advanced front-end concepts:  glassm
     <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 
-  <a href="https://www.linkedin.com/in/davi-carvalho10/" target="_blank">
+  <a href="https://www.linkedin.com/in/davi-carvalho-dev/" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
 
